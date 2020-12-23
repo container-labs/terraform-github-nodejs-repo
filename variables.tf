@@ -10,6 +10,10 @@ variable "npm_package_repo" {
   default = false
 }
 
-variable "dependabot_simple" {
+variable "dependabot_enabled" {
   default = false
+}
+
+variable "dependabot_directory" {
+  default = "/"
 }
