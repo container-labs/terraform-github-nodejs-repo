@@ -39,7 +39,7 @@ provider "registry.terraform.io/hashicorp/local" {
 
 provider "registry.terraform.io/integrations/github" {
   version     = "4.4.0"
-  constraints = "~> 4.1"
+  constraints = "~> 4.1, ~> 4.4"
   hashes = [
     "h1:dgn+oL1cC8kz3ODIuT/PyHqgso00SpItPN089ZuUGt4=",
     "zh:0ebb07c4971ca7d60fce8614270d056328a121fd4ffbda4b29a06d4a1e90e939",

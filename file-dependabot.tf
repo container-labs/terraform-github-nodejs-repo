@@ -2,7 +2,7 @@ locals {
   bot_yaml = templatefile(
     "${path.module}/files/dependabot.yml.tpl",
     {
-      directory            = var.dependabot_directory
+      directory = var.dependabot_directory
     }
   )
 }
