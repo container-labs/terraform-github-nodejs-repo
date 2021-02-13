@@ -12,5 +12,5 @@ resource "github_repository_file" "dependabot" {
   repository = var.repository
   branch     = "main"
   file       = ".github/dependabot.yml"
-  content    = bot_yaml
+  content    = local.bot_yaml
 }

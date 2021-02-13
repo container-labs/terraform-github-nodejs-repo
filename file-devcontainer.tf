@@ -17,12 +17,12 @@ resource "github_repository_file" "devcontainer_dockerfile" {
   repository = var.repository
   branch     = "main"
   file       = ".devcontainer/Dockerfile"
-  content    = devcontainer_dockerfile
+  content    = local.devcontainer_dockerfile
 }
 
 resource "github_repository_file" "devcontainer_json" {
   repository = var.repository
   branch     = "main"
   file       = ".devcontainer/devcontainer.json"
-  content    = devcontainer_json
+  content    = local.devcontainer_json
 }

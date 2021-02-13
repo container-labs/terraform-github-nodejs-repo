@@ -17,12 +17,12 @@ resource "github_repository_file" "gitpod_dockerfile" {
   repository = var.repository
   branch     = "main"
   file       = ".devcontainer/gitpod.Dockerfile"
-  content    = gitpod_dockerfile
+  content    = local.gitpod_dockerfile
 }
 
 resource "github_repository_file" "gitpod_yaml" {
   repository = var.repository
   branch     = "main"
   file       = ".gitpod.yml"
-  content    = gitpod_yaml
+  content    = local.gitpod_yaml
 }
