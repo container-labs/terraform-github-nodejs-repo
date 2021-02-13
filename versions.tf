@@ -1,10 +1,10 @@
 terraform {
   required_providers {
     tfe = {
-      source = "hashicorp/github"
+      source = "integrations/github"
       # check back for 3.0
       # https://github.com/terraform-providers/terraform-provider-github/blob/master/CHANGELOG.md
-      version = "~> 2.9.2"
+      version = "~> 4.1"
     }
   }
   required_version = ">= 0.13"
