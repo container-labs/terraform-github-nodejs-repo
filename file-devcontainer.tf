@@ -18,6 +18,7 @@ resource "github_repository_file" "devcontainer_dockerfile" {
   branch     = "main"
   file       = ".devcontainer/Dockerfile"
   content    = local.devcontainer_dockerfile
+  overwrite_on_create = true
 }
 
 resource "github_repository_file" "devcontainer_json" {
@@ -25,4 +26,5 @@ resource "github_repository_file" "devcontainer_json" {
   branch     = "main"
   file       = ".devcontainer/devcontainer.json"
   content    = local.devcontainer_json
+  overwrite_on_create = true
 }

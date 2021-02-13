@@ -7,7 +7,7 @@ resource "github_actions_secret" "npm_token" {
 
 module "gitignore" {
   source     = "container-labs/gitignore/github"
-  version    = "~> 2.6"
+  version    = "~> 2.8"
   repository = var.repository
   ignores = [
     "osx",

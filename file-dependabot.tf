@@ -13,4 +13,5 @@ resource "github_repository_file" "dependabot" {
   branch     = "main"
   file       = ".github/dependabot.yml"
   content    = local.bot_yaml
+  overwrite_on_create = true
 }

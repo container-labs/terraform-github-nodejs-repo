@@ -4,4 +4,5 @@ resource "github_repository_file" "npm-publish" {
   branch     = "main"
   file       = ".github/workflows/npm-publish.yml"
   content    = file("${path.module}/files/actions/npm-publish.yml")
+  overwrite_on_create = true
 }
